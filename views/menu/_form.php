@@ -16,7 +16,7 @@ use ekalokman\AdminPgsql\models\Menu;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => 128]) ?>
 
-    <?= $form->field($model, 'PARENT_NAME')->widget('yii\jui\AutoComplete',[
+    <?= $form->field($model, 'parent_name')->widget('yii\jui\AutoComplete',[
         'options'=>['class'=>'form-control'],
         'clientOptions'=>[
             'source'=>  Menu::find()->select(['name'])->column()
