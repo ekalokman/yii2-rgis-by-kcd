@@ -1,0 +1,24 @@
+{
+    "name": "ekalokman/yii2-rgis-by-kcd",
+    "description": "Auth manager for Yii2 Registration",
+    "keywords": ["yii", "admin", "auth"],
+    "version" : "1.0.0",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "ekalokman",
+            "email": "ekalokman95@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ekalokman\\AdminPgsql\\": ""
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
