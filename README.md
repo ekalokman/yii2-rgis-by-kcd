@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require hafizhassan/yii2-admin-oci8 "dev-master"
+php composer.phar require ekalokman/yii2-rgis-by-kcd "dev-master"
 ```
 
 for dev-master
 
 ```
-php composer.phar require hafizhassan/yii2-admin-oci8 "dev-master"
+php composer.phar require ekalokman/yii2-rgis-by-kcd "dev-master"
 ```
 
 or add
