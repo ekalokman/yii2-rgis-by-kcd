@@ -30,7 +30,7 @@ php composer.phar require ekalokman/yii2-rgis-by-kcd "dev-master"
 or add
 
 ```
-"hafizhassan/yii2-admin-oci8": "dev-master"
+"ekalokman/yii2-rgis-by-kcd": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
