@@ -9,6 +9,9 @@ use yii\helpers\Html;
 
 ekalokman\AdminPgsql\AdminAsset::register($this);
 ?>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@ ekalokman\AdminPgsql\AdminAsset::register($this);
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body>
+    <body class="bgcontent">
         <?php $this->beginBody() ?>
         <?php
         NavBar::begin([
