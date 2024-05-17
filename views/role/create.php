@@ -15,8 +15,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<h1><?= Html::encode($this->title) ?></h1>
 
-	<?php echo $this->render('_form', [
-        'model' => $model,
-    ]); ?>
+    <div class="box box-solid box-primary">
+          <div class="box-body table-responsive with-border">
+            <?php echo $this->render('_form', [
+                'model' => $model,
+            ]); ?>
+        </div>
+    </div>
 
 </div>

@@ -22,7 +22,7 @@ ekalokman\AdminPgsql\AdminAsset::register($this);
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="bgcontent">
+    <body>
         <?php $this->beginBody() ?>
         <?php
         NavBar::begin([
@@ -44,7 +44,7 @@ ekalokman\AdminPgsql\AdminAsset::register($this);
         NavBar::end();
         ?>
 
-        <div class="container">
+        <div class="container bgcontent">
             <?= $content ?>
         </div>
 
