@@ -21,28 +21,30 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <div class="box box-solid box-primary">
-    <?php
-    Pjax::begin([
-        'enablePushState'=>false,
-    ]);
-    echo GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'name',
-                'label' => Yii::t('rbac-admin', 'Name'),
-            ],
-            [
-                'attribute' => 'description',
-                'label' => Yii::t('rbac-admin', 'Description'),
-            ],
-            ['class' => 'yii\grid\ActionColumn',],
-        ],
-    ]);
-    Pjax::end();
-    ?>
+        <div class="box-body table-responsive with-border">
+            <?php
+            Pjax::begin([
+                'enablePushState'=>false,
+            ]);
+            echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+                    [
+                        'attribute' => 'name',
+                        'label' => Yii::t('rbac-admin', 'Name'),
+                    ],
+                    [
+                        'attribute' => 'description',
+                        'label' => Yii::t('rbac-admin', 'Description'),
+                    ],
+                    ['class' => 'yii\grid\ActionColumn',],
+                ],
+            ]);
+            Pjax::end();
+            ?>
+        </div>
     </div>
 
 </div>
