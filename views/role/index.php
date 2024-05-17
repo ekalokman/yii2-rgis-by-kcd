@@ -20,6 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a(Yii::t('rbac-admin', 'Create Role'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+    <div class="box box-solid box-primary">
     <?php
     Pjax::begin([
         'enablePushState'=>false,
@@ -42,5 +43,6 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     Pjax::end();
     ?>
+    </div>
 
 </div>

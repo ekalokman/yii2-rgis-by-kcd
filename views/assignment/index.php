@@ -15,6 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<h1><?= Html::encode($this->title) ?></h1>
 
+    <div class="box box-solid box-primary">
 	<?php
     Pjax::begin([
         'enablePushState'=>false,
@@ -47,5 +48,6 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     Pjax::end();
     ?>
+    </div>
 
 </div>
